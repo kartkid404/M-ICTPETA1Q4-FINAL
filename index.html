@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clockwatch Tower</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+        <div class="container">
+            <div class="mysquare">
+                <div id="myday"></div>
+            </div>
+            <div class="mysquare">
+                <div id="mytime"></div>
+            </div>
+            <div class="mysquare">
+                <div id="mydate"></div>
+            </div>
+        </div>
+    </main>
+
+    <div class="author-container">
+        <i class="programmer">Created and designed by: Jerian Gianna A. Morales</i>
+    </div>
+
+</body>
+<script>
+    var today = new Date();
+    var day = today.getDay();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    var date = (today.getMonth()+1) + "-" + today.getDate() +  "-" + today.getFullYear();
+    // console.log(day);
+    var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    document.getElementById("myday").innerHTML ="Today is " + daylist[day]
+    document.getElementById("mytime").innerHTML ="TIME:" + " " + time;
+    document.getElementById("mydate").innerHTML = "DATE: " + " " + date;
+</script>
+</html>

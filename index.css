@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    
+    background-image: url(images/clockworks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+main {
+    height: 95vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.author-container {
+    width: 100vw;
+    text-align: right;
+}
+
+.author-container i {
+    margin-right: 30px;
+    text-shadow: 2px 0.5px 5px rgba(213,223,0,0.6);
+    color: #fff;
+}
+
+/* .programmer {
+    position: relative;
+    left: 150;
+} */
+ 
+.container {
+    background-color: rgb(104, 132, 139, 0.8);
+    border: 1px solid rgb(255, 168, 73);
+    outline: 1px solid rgb(255, 251, 183);
+    outline-offset: -4px;
+    border-radius: 5px;
+    height: 250px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mysquare {
+    background-color: rgb(74, 43, 19, 0.5);
+    border: 1px solid rgb(255, 251, 183, 0.5);
+    margin: 5px 0px;
+    width: 300px;
+    padding: 5px;
+    color: yellow;
+}
